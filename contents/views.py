@@ -1,7 +1,13 @@
-from django.views import View
 from django.http import HttpResponse
 from django.shortcuts import render
+from django.views import View
 
-class ExampleView(View):
+from .models import Content
+
+
+class ContentView(View):
+    template_name = "contents/content_list.html"
+
     def get(self, request):
-        return HttpResponse("<h1>Hello world!</h1>")
+        contents = Content.objects.all()
+        return render(request, self.template_name, {'contents': contents})

@@ -1,6 +1,7 @@
 from django.urls import path
-from contents.views import ExampleView
+
+from contents.views import ContentView
 
 urlpatterns = [
-    path('example/', ExampleView.as_view(), name='example-view'),
+    path('', ContentView.as_view(), name='list_contents'),
 ]

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block page_title %}
+    Não sei o que colocar
+{% endblock page_title %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h1 style="color: #3498db;">Conteúdos</h1>
+        <hr>
+        {% for content in contents %}
+            <div>
+                <h3>{{ content.title }}</h3>
+                <p>{{ content.body }}</p>
+                <p>Autor: {{ content.author }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock content %}
