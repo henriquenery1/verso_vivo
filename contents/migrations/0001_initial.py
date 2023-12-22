@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('title', models.CharField(max_length=200, verbose_name='Título')),
-                ('body', models.TextField(verbose_name='Conteúdo do texto')),
+                ('body', models.TextField(verbose_name='Conteúdo')),
                 ('author', models.CharField(max_length=100, verbose_name='Autor')),
                 ('publication_date', models.DateTimeField(default=django.utils.timezone.now, verbose_name='Data de Publicação')),
             ],
