@@ -11,7 +11,7 @@
         {% for content in contents %}
             <div>
                 <h3>{{ content.title }}</h3>
-                <p>{{ content.body }}</p>
+                <p>{{ content.body|linebreaks }}</p>
                 <p>Autor: {{ content.author }}</p>
                 <br>
                 <hr>
