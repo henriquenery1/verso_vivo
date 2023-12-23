@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Títulos{% endblock title %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h2 class="text-center">Títulos dos Conteúdos</h2>
+        <ul class="list-group">
+            {% for content in contents %}
+                <li class="list-group-item">
+                    <a href="{% url 'detail_content' content.id %}" class="text-decoration-none text-dark font-weight-bold">{{ content.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock content %}

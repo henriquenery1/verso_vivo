@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Detalhes do Conteúdo{% endblock title %}
+
+{% block content %}
+    <div class="container mt-4">
+        <h2 class='text-center'> {{ content.title }} </h2>
+        <p>{{ content.body }}</p>
+        <p>Autor: {{ content.author }}</p>
+        <p>Data de Publicação: {{ content.publication_date }}</p>
+    </div>
+{% endblock content %}
