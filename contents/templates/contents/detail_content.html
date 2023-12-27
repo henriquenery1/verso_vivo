@@ -6,6 +6,6 @@
     <div class="container mt-4">
         <h2 class='text-center'> {{ content.title }} </h2>
         <p>{{ content.body|linebreaks }}</p>
-        <p>Data de Publicação: {{ content.publication_date }}</p>
+        <p>Data de Publicação: {{ content.formatted_date }}</p>
     </div>
 {% endblock content %}
