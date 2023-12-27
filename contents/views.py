@@ -33,7 +33,7 @@ class CreateContentView(CreateView):
     template_name = 'contents/create_content.html'
     model = Content
     form_class = ContentForm
-    success_url = reverse_lazy('list_contents')
+    success_url = reverse_lazy('titles_content')
 
     def form_valid(self, form):
         return super().form_valid(form)
