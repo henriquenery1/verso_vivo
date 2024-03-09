@@ -2,6 +2,16 @@
 
 {% block title %}Novo conteúdo{% endblock title %}
 
+{% block extra_css %}
+    <style>
+        .custom-textarea {
+            height: 60vh;
+            font-family: sans-serif;
+            font-size: 20px; 
+        }
+    </style>
+{% endblock extra_css %}
+
 {% block content %}
     <div class="container mt-4">
         <h2 class="text-center">Criar novo conteúdo</h2>
@@ -14,7 +24,7 @@
             
             <div class="mb-3">
                 <label for="{{ form.body.id_for_label }}" class="form-label">Conteúdo</label>
-                <textarea rows="10" class="form-control" name="{{ form.body.name }}"></textarea>
+                <textarea class="form-control custom-textarea" name="{{ form.body.name }}"></textarea>
             </div>
             
             <button type="submit" class="btn btn-primary btn-lg mx-auto d-block mt-4 px-5 py-3">Salvar</button>
