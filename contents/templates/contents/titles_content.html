@@ -8,7 +8,7 @@
         <ul class="list-group">
             {% for content in contents %}
             <a href="{% url 'detail_content' content.id %}" class="text-decoration-none text-dark font-weight-bold">
-                <li class="list-group-item">
+                <li class="list-group-item" style="background-color: #212121; color: #fff;">
                     {{ content.title }}
                 </li>
             </a>            
