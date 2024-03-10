@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Versículo{% endblock title %}
+
+{% block content %}
+    <div>
+        <h1>Versículo do dia</h1>
+            {% for verse in verses %}
+                <span>{{ verse.text }}</span><br>
+                <span>{{ verse.reference }}</span>
+            {% endfor %}
+    </div>
+{% endblock content %}
