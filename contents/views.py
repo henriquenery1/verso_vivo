@@ -42,7 +42,7 @@ class CreateContentView(CreateView):
     def form_valid(self, form):
         return super().form_valid(form)
     
-class SearchVerseView(View):
+class VerseDay(View):
     template_name = "verse/verse.html"
 
     def get(self, request):
