@@ -1,8 +1,8 @@
 **Verso Vivo**
 
-Verso Vivo é um projeto desenvolvido em Python utilizando o framework Django. Com o objetivo de criar um blog com conteúdos autorais e também de outros escritores. O projeto é open source e convida colaboradores a participarem do desenvolvimento.
+O Verso Vivo é um projeto desenvolvido em Python utilizando o framework Django. Com o objetivo de criar um blog que ofereça não apenas conteúdos autorais, mas também de outros escritores.
 
-### Uso:
+### Como Utilizar:
 1. Clone o repositório:
    ```bash
    git clone https://github.com/henriquenery1/blog-django.git
