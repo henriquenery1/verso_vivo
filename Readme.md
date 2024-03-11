@@ -16,7 +16,7 @@
 
 3. Crie e ative um ambiente virtual:
    ```bash
-   python -m venv venv
+   python3 -m venv venv
    source venv/bin/activate
    ```
 
@@ -25,9 +25,14 @@
    pip install -r requirements.txt
    ```
 
-5. Execute o servidor:
+ 5. Faça as migrates:
    ```bash
-   python manage.py runserver
+   python3 manage.py migrate
+   ```
+
+6. Execute o servidor:
+   ```bash
+   python3 manage.py runserver
    ```
 
 ### Contribuições:
