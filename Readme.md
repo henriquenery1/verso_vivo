@@ -6,12 +6,12 @@
 ### Como Utilizar:
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/henriquenery1/blog-django.git
+   git clone git@github.com:henriquenery1/verso_vivo.git
    ```
 
 2. Navegue até o diretório do projeto:
    ```bash
-   cd blog-django
+   cd verso_vivo
    ```
 
 3. Crie e ative um ambiente virtual:
