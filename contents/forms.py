@@ -1,5 +1,5 @@
 from django import forms
-from .models import Content
+from contents.models.content import Content
 
 class ContentForm(forms.ModelForm):
     class Meta:

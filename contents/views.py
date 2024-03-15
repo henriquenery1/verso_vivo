@@ -8,8 +8,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from .forms import ContentForm
-from .models import Content
-
+from contents.models.content import Content
 
 class ContentView(View):
     template_name = "contents/content_list.html"
